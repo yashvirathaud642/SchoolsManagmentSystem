@@ -14,7 +14,7 @@
     ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SYf1SA4SwF/p3aiL2L4NfIGX8n7qJKC5I2F6f5" crossorigin="anonymous">
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SYf1SA4SwF/p3aiL2L4NfIGX8n7qJKC5I2F6f5" crossorigin="anonymous">
 
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
@@ -37,6 +37,12 @@
                     <a class="register nav-link text-info" href="manage.php">Manage User</a>
                 </li>
             </ul>
+        </div>
+        <div class="topnav-right">
+            <a class="text-info" style="text-decoration:none" ; href="#"><i
+                    class="fa-solid fa-user"></i>Profile</a>&nsbp;
+            <a class="text-info" style="text-decoration:none" ; href="#"><i
+                    class="fa-solid fa-right-from-bracket"></i>Logout</a>
         </div>
     </nav>
     <div class="container">
