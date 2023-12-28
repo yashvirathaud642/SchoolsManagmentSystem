@@ -9,7 +9,7 @@
 <body>
 <?php
     require "dp.php";
-    include 'loginNavbar2.php';
+    include 'loginNavbar.php';
     if(isset($_GET['id'])){
         $id = $_GET['id'];
     }
@@ -32,7 +32,7 @@
                     <!--<input type="text" name="country" id="country" class="form-control mt-2"required>-->
                             <select class="form-control mt-2" id="country" onchange="updateForm()">
                                 <option value="country">select country</option>
-                                <option value="country">Madhya pradesh</option>
+                                <option value="country">India</option>
                             </select>
                 </div>
                 <div class="form-group">
@@ -40,7 +40,7 @@
                    <!-- <input type="text" name="state" id="state" class="form-control mt-2"required>-->
                    <select class="form-control mt-2" id="state" onchange="updateForm()">
                                 <option value="state">select state</option>
-                                <option value="state">Gujrat</option>
+                                <option value="state">Madhya Pradesh</option>
                             </select>
                 </div>
                 <div class="form-group">
@@ -48,7 +48,7 @@
                    <!-- <input type="text" name="city" id="city" class="form-control mt-2"required>-->
                    <select class="form-control mt-2" id="city" onchange="updateForm()">
                                 <option value="city">select city</option>
-                                <option value="city">India</option>
+                                <option value="city">indore</option>
                             </select>
                 </div>
                 <div class="form-group">
@@ -64,8 +64,3 @@
     </div>
 </body>
 </html> 
-
-
-
-
-
