@@ -7,11 +7,10 @@ $res = mysqli_query($con, $sql);
 $data = mysqli_fetch_array($res);
 
 $name = $data['name'];
-$country = 'null';
-$state = 'null';
-$city = 'null';
-$image = 'userimage';
-
+$country = $data['country'];
+$state = $data['state'];
+$city = $data['city'];
+$image = isset($data['userimage']) ? $data['userimage'] : 'userimage';
 
 ?>
 
@@ -21,7 +20,7 @@ $image = 'userimage';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read</title>
+    <title> View </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -50,7 +49,7 @@ $image = 'userimage';
     </div>
     <div class="topnav-right">
     <a  class="text-info text-white" href="#" style="text-decoration: none;"><i class="fa-solid fa-user"></i>Profile</a>&nsbp;
-    <a class="text-info text-white" href="#"  style="text-decoration: none;"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+    <a  class="text-info text-white" href="#" style="text-decoration: none;"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
   </div>
   </nav>
   <div class="container p-3">
@@ -82,8 +81,5 @@ $image = 'userimage';
                 
                 </div>
                 
-
-         
-    
 </body>
 </html>
